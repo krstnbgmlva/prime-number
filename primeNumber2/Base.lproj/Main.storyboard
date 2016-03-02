@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="primeNumber2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TS2-tx-Mec">
+                                <rect key="frame" x="76" y="50" width="223" height="24"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="hQ8-ja-79d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr1-e5-xba">
+                                <rect key="frame" x="122" y="218" width="131" height="57"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="csw-vh-t65"/>
+                                    <constraint firstAttribute="height" constant="57" id="qJS-jg-Eqx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jl0-bw-25j"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qTD-uG-Xc2">
+                                <rect key="frame" x="139" y="119" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TuD-Rn-CMQ"/>
+                                    <constraint firstAttribute="width" constant="97" id="jFL-VW-mse"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="0.3809814453125" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xr1-e5-xba" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C1a-cR-Ix5"/>
+                            <constraint firstItem="TS2-tx-Mec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FUT-47-g9R"/>
+                            <constraint firstItem="TS2-tx-Mec" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="jMc-kO-UuN"/>
+                            <constraint firstItem="qTD-uG-Xc2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m22-3z-R4r"/>
+                            <constraint firstItem="qTD-uG-Xc2" firstAttribute="top" secondItem="TS2-tx-Mec" secondAttribute="bottom" constant="45" id="vsK-gO-0B9"/>
+                            <constraint firstItem="xr1-e5-xba" firstAttribute="top" secondItem="qTD-uG-Xc2" secondAttribute="bottom" constant="69" id="yzX-Ls-FCR"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="userNumber" destination="qTD-uG-Xc2" id="8Rg-65-WG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="387.5"/>
+        </scene>
+    </scenes>
+</document>
